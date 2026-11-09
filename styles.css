@@ -16,7 +16,6 @@ body {
     width: 80vw;
     height: 80vh;
     background-color: black;
-
     display: grid;
     grid-template-columns: repeat(40, 1fr);
     grid-template-rows: repeat(20, 1fr);
@@ -27,6 +26,5 @@ body {
     background-color: gray;
     border-radius: 20%;
     cursor: pointer;
-
     transition: background-color 1s ease;
 }

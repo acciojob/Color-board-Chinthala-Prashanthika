@@ -21,11 +21,7 @@ for (let i = 0; i < 800; i++) {
 
     div.addEventListener("mouseleave", (e) => {
 
-        setTimeout(() => {
-
-            e.target.style.backgroundColor = "gray";
-
-        }, 1000);
+        e.target.style.backgroundColor = "gray";
 
     });
 
