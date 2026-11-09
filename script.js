@@ -8,7 +8,11 @@ for (let i = 0; i < 800; i++) {
 
     div.classList.add("square");
 
+    let timer;
+
     div.addEventListener("mouseenter", (e) => {
+
+        clearTimeout(timer);
 
         const red = Math.floor(Math.random() * 256);
         const green = Math.floor(Math.random() * 256);
@@ -21,7 +25,11 @@ for (let i = 0; i < 800; i++) {
 
     div.addEventListener("mouseleave", (e) => {
 
-        e.target.style.backgroundColor = "gray";
+        timer = setTimeout(() => {
+
+            e.target.style.backgroundColor = "gray";
+
+        }, 1000);
 
     });
 
